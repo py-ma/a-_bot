@@ -4,7 +4,7 @@ import telebot
 from telebot import types, TeleBot
 from email import message
 
-bot: TeleBot = telebot.TeleBot('1647199982:AAFyIJY1pn3RcEQmT0_pQOd0VZX30uP8iG0')
+bot: TeleBot = telebot.TeleBot('.............................')
 
 KEY_TO_PHRASE = {
 	'key_1': 'Овен\n\nЗалог Вашего счастья – Ваша семья. Они дают Вам ту опору и поддержку, что помогает в жизни. Цените их, ведь не каждому в жизни везет как Вам. Когда на Вашем пути встречаются проблемы, то идите на контакт к родным, это поможет Вам. Стоит задуматься над тем, что для счастья стоит отказаться от чего-то.',
