@@ -16,7 +16,7 @@ def welcome(message):
                      'Добро пожаловать!\nНапиши мне «Хочу гороскоп», если хочешь почитать о своем знаке зодиака, '
                      'или «Хочу предсказание», если хочешь вытянуть печеньку с предсказанием')
 
-
+    
 @bot.message_handler(content_types=['text'])
 def msg_handler(message):
     if message.text.lower() == 'хочу гороскоп':
@@ -53,8 +53,6 @@ def callback_handler(call):
         text_a = KEYS_TO_ZODIAC_SIGNS[call.data]
         bot.edit_message_text(chat_id=call.message.chat.id, text=text_a,
                               message_id=call.message.message_id, reply_markup=back_menu)
-
-
 
 
 bot.polling(none_stop=True, interval=0)
